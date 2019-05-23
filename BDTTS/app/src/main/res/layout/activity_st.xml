@@ -11,37 +11,89 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <RadioGroup
+        android:id="@+id/rg_vad"
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <RadioButton
+            android:id="@+id/rb_dnn"
             android:text="VAD_DNN"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <RadioButton
+            android:checked="true"
+            android:id="@+id/rb_touch"
             android:text="VAD_TOUCH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </RadioGroup>
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
     <TextView
-        android:textColor="#fff"
-        android:background="#000"
+        android:text="Pid(语言，模型):"
+        android:background="#9c9c9c"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/sp_pid"
+        android:entries="@array/baidu_pid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+    <TextView
+        android:text="是否离线:(暂不可用)"
+        android:background="#9c9c9c"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/rg_offline"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_0ffline_true"
+            android:text="True"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/rb_0ffline_false"
+            android:text="False"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <TextView
+        android:text="静音时长(0:长语音功能):"
+        android:background="#9c9c9c"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/et_pid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="识别结果:"
+        android:background="#9c9c9c"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18dp"
         android:padding="8dp"
         android:id="@+id/txtResult" />
 
-    <View
+    <TextView
+        android:text="Log:"
+        android:background="#9c9c9c"
+        android:textColor="#000"
         android:layout_width="match_parent"
-        android:background="#999"
-        android:layout_height="1dp" />
-
+        android:layout_height="wrap_content" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_weight="1"

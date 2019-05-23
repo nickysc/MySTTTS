@@ -1,4 +1,4 @@
-package com.baidu.speech.myapplication.ST;
+package com.baidu.speech.myapplication.BaiduST;
 
 import android.Manifest;
 import android.content.pm.PackageManager;

@@ -7,8 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.baidu.aip.asrwakeup3.core.mini.ActivityMiniRecog;
-import com.baidu.speech.myapplication.ST.STActivity;
+import com.baidu.speech.myapplication.BaiduST.STActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
